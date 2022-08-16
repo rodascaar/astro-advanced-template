@@ -1,5 +1,5 @@
 {
-  "name": "astro-blog-template",
+  "name": "astro-advanced-blog-template",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "@astrojs/mdx": "^0.8.3",
     "@astrojs/svelte": "^1.0.0",
     "astro": "^1.0.3",
+    "astro-compress": "^0.0.18",
     "rehype-external-links": "^2.0.0"
   },
   "dependencies": {

@@ -3,24 +3,25 @@
 [![Screenshot](screenshot.png)](https://astro-blog-template.netlify.app/)
 
 ## 👉 Check out the ✨ [Live Demo](https://astro-blog-template.netlify.app/) ✨
- 
+
 ## 👩‍🚀 Getting Started
 
 ### Locally
 
-```
-pnpm create astro -- --template redwerkz/astro-advanced-blog-template
-# alternatively
-yarn create astro -- --template redwerkz/astro-advanced-blog-template
-# or
+```sh
+# Using NPM
 npm init astro -- --template redwerkz/astro-advanced-blog-template
+# Using Yarn
+yarn create astro -- --template redwerkz/astro-advanced-blog-template
+# Using PNPM
+pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 ```
 
 ### On StackBlitz
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/charca/astro-blog-template)
 
-## ✨ Features:
+## ✨ Features
 
 - ✅ Astro 1.0
 - ✅ Dark Mode
@@ -28,12 +29,13 @@ npm init astro -- --template redwerkz/astro-advanced-blog-template
 - ✅ SEO-friendly setup with canonical URLs and OpenGraph data
 - ✅ RSS 2.0 generation
 - ✅ Sitemap.xml generation
+- 🗜️ Source compression by [astro-compress](https://github.com/Playform/astro-compress#readme)
 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```
+```txt
 /
 ├── public/
 │   ├── robots.txt
