@@ -31,7 +31,7 @@ pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 
 - [x] 🚀 Astro 1.0
 - [x] 🌑 Dark Mode
-- [x] ⭐ Next-Gen favicons (SVG + PNG)
+- [x] ⭐ Next-Gen favicons ([SVG](https://caniuse.com/link-icon-svg)+[PNG](https://caniuse.com/link-icon-png))
 - [x] 📈 SEO-friendly setup with canonical URLs and OpenGraph data
 - [x] 📝 Full Markdown support ([MDX](https://mdxjs.com/))
 - [x] 🗺 Sitemap.xml generation ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/))
