@@ -37,6 +37,7 @@ pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 - [ ] ✅ Sitemap.xml generation
 - [x] 🗜️ Source compression via [astro-compress](https://github.com/Playform/astro-compress#readme)
 - [x] ⬆️ Deploy to Netlify, Vercel or FTP via [ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme)
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -70,6 +71,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm run dev`     | Starts local dev server at `localhost:3030`  |
 | `pnpm run build`   | Build your production site to `./dist/`      |
 | `pnpm run preview` | Preview your build locally, before deploying |
+| `pnpm deploy`      | Deploy your build via FTP                    |
 
 ## 👀 Want to learn more?
 
