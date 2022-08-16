@@ -6,7 +6,7 @@ description: A sample page with the most common elements of an article, includin
 
 ![Illustration of woman using a computer receiving likes](/assets/blog/casual-life-3d-likes.webp)
 
-This page is an adapted version of [markdown-test-page](https://github.com/fullpipe/markdown-test-page). It should give you an idea of how different elements are styled on this template.
+This page is an adapted version of [markdown-test-page](//github.com/fullpipe/markdown-test-page). It should give you an idea of how different elements are styled on this template.
 
 ## <a name="top"></a> Table of Contents
 
@@ -146,7 +146,7 @@ Et fugiat ad nisi amet magna labore do cillum fugiat occaecat cillum Lorem proid
   <div class="md:flex-shrink-0">
     <img
       class="rounded-lg md:w-56"
-      src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
+      src="//images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
       alt="Woman paying for a purchase"
     />
   </div>
@@ -171,10 +171,10 @@ Ex amet id ex aliquip id do laborum excepteur exercitation elit sint commodo occ
 
 ```html
 <script>
-  let count = 0
+  let count = 0;
 
   function handleClick() {
-    count += 1
+    count += 1;
   }
 </script>
 

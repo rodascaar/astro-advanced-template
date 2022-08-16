@@ -1,9 +1,16 @@
 ---
-import Logo from './Logo.astro'
-import Nav from './Nav.astro'
+import { SkipLinks } from "accessible-astro-components";
+import Logo from "./Logo.astro";
+import Nav from "./Nav.astro";
 
-const { current = '' } = Astro.props;
+const { current = "" } = Astro.props;
 ---
+
+<header>
+  <SkipLinks />
+  <Logo />
+  <Nav current={current} />
+</header>
 
 <style>
   header {
@@ -14,8 +21,3 @@ const { current = '' } = Astro.props;
     width: 100%;
   }
 </style>
-
-<header>
-  <Logo />
-  <Nav current={current} />
-</header>
