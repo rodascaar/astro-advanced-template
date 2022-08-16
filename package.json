@@ -7,13 +7,15 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "node deploy"
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.8.3",
     "@astrojs/svelte": "^1.0.0",
     "astro": "^1.0.5",
     "astro-compress": "^0.0.18",
+    "ftp-deploy": "^2.4.3",
     "rehype-external-links": "^2.0.0"
   },
   "dependencies": {

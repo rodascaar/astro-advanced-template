@@ -35,8 +35,8 @@ pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 - [x] ✅ SEO-friendly setup with canonical URLs and OpenGraph data
 - [ ] ✅ RSS 2.0 generation
 - [ ] ✅ Sitemap.xml generation
-- 🗜️ Source compression via [astro-compress](https://github.com/Playform/astro-compress#readme)
-
+- [x] 🗜️ Source compression via [astro-compress](https://github.com/Playform/astro-compress#readme)
+- [x] ⬆️ Deploy to Netlify, Vercel or FTP via [ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme)
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
