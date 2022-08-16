@@ -29,13 +29,14 @@ pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 
 ## ✨ Features
 
-- [x] 🚀 Astro 1.0
+- [x] 🚀 Astro 1.0 Static Site (SSG)
+- [x] 👌 Zero JS runtime
 - [x] 🌑 Dark Mode
 - [x] ⭐ Next-Gen favicons ([SVG](https://caniuse.com/link-icon-svg)+[PNG](https://caniuse.com/link-icon-png))
 - [x] 📈 SEO-friendly setup with canonical URLs and OpenGraph data
 - [x] 📝 Full Markdown support ([MDX](https://mdxjs.com/))
 - [x] 🗺 Sitemap.xml generation ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/))
-- [x] 🗜️ Source compression ([astro-compress](https://github.com/Playform/astro-compress#readme))
+- [x] 🗜️ Site compression ([astro-compress](https://github.com/Playform/astro-compress#readme))
 - [x] ⬆️ Deploy to Netlify, Vercel or FTP ([ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme))
 - [ ] 🌐 RSS 2.0 generation
 
@@ -61,8 +62,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   │   ├── Footer.astro
 │   │   ├── Header.astro
 │   │   ├── Logo.astro
-│   │   ├── Nav.astro
-│   │   └── ThemeToggleButton.svelte
+│   │   └── Nav.astro
 |   ├── data/
 |   |   └── blog-posts/
 |   |       ├── hello-world.md

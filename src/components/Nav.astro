@@ -1,7 +1,16 @@
 ---
-import ThemeToggleButton from './ThemeToggleButton.svelte';
-const { current = '' } = Astro.props;
+import { DarkMode } from 'accessible-astro-components'
+const { current = '' } = Astro.props
 ---
+
+<nav>
+  <a class={current === "" ? "selected" : ""} href='/'>home</a>
+  <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
+  <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
+  <div class="theme-toggle-container">
+    <DarkMode />
+  </div>
+</nav>
 
 <style>
   nav {
@@ -50,16 +59,33 @@ const { current = '' } = Astro.props;
     background: var(--primary-color);
   }
 
-  .theme-toggle-container {
-    width: 75px;
+  .darkmode-toggle {
+    padding: 0;
+    border: none;
+    svg {
+      width: 30px;
+    }
+    svg path {
+      fill: var(--secondary-500);
+      transition: fill 0.2s ease-in-out;
+    }
+    &:hover {
+      svg path {
+        fill: var(--primary-400);
+      }
+    }
+    &:focus {
+      @include outline;
+    }
+  }
+  .darkmode .darkmode-toggle {
+    svg path {
+      fill: var(--secondary-100);
+    }
+    &:hover {
+      svg path {
+        fill: var(--primary-400);
+      }
+    }
   }
 </style>
-
-<nav>
-  <a class={current === "" ? "selected" : ""} href='/'>home</a>
-  <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
-  <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
-  <div class="theme-toggle-container">
-    <ThemeToggleButton client:load />
-  </div>
-</nav>
