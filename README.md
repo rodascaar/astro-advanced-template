@@ -46,14 +46,49 @@ Inside of your Astro project, you'll see the following folders and files:
 ```txt
 /
 ├── public/
-│   ├── robots.txt
-│   └── favicon.ico
+│   ├── assets/
+│   │   └── icons/
+│   │       ├── favicon_dark-16.png
+│   │       ├── favicon_dark-16.png
+│   │       ├── favicon_light-16.png
+│   │       ├── favicon_light-16.png
+│   │       └── favicon.svg
+│   └── robots.txt
 ├── src/
 │   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   │   ├── BaseHead.astro
+│   │   ├── Bio.astro
+│   │   ├── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── Logo.astro
+│   │   ├── Nav.astro
+│   │   └── ThemeToggleButton.svelte
+|   ├── data/
+|   |   └── blog-posts/
+|   |       ├── hello-world.md
+|   |       └── markdown-test.md
+|   ├── layouts/
+|   |   └── BaseLayout.astro
+│   ├── pages/
+│   |   ├── blog/
+│   |   |   ├── [slug].astro
+|   |   |   └── index.astro
+│   |   ├── about.astro
+│   |   └── index.astro
+|   ├── styles/
+|   |   ├── fonts.css
+|   |   └── global.css
+|   └── utils/
+|       └── getPostData.ts
+├── .gitignore
+├── .npmrc
+├── astro.config.mjs
+├── deploy.js
+├── LICENSE
+├── pnpm-lock.yaml
+├── README.md
+├── package.json
+└── tsconfig.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
