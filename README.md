@@ -31,12 +31,13 @@ pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 
 - [x] 🚀 Astro 1.0
 - [x] 🌑 Dark Mode
-- [x] 📝 Full Markdown support
+- [x] ⭐ Next-Gen favicons (SVG + PNG)
 - [x] 📈 SEO-friendly setup with canonical URLs and OpenGraph data
+- [x] 📝 Full Markdown support ([MDX](https://mdxjs.com/))
+- [x] 🗺 Sitemap.xml generation ([@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/))
+- [x] 🗜️ Source compression ([astro-compress](https://github.com/Playform/astro-compress#readme))
+- [x] ⬆️ Deploy to Netlify, Vercel or FTP ([ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme))
 - [ ] 🌐 RSS 2.0 generation
-- [x] 🗺 Sitemap.xml generation via [@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
-- [x] 🗜️ Source compression via [astro-compress](https://github.com/Playform/astro-compress#readme)
-- [x] ⬆️ Deploy to Netlify, Vercel or FTP via [ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme)
 
 ## 🚀 Project Structure
 
