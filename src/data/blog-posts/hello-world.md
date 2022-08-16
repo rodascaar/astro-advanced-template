@@ -1,6 +1,6 @@
 ---
 title: Hello World 👋
-publishDate: 30 Nov 2021
+publishDate: 10 Oct 2022
 description: Every blog starts with a single post. This is yours. Make it great.
 ---
 

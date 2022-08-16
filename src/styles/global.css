@@ -266,3 +266,13 @@ input[name='theme-toggle'] {
     margin: 1em 0;
   }
 }
+
+/* Apple notch fix */
+/* https://bubblin.io/blog/notch */
+
+@supports(padding:max(0px)) {
+  body, header, footer {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+      padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
