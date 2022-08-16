@@ -5,19 +5,20 @@ import compress from "astro-compress"
 import sitemap from "@astrojs/sitemap"
 
 export default defineConfig({
-  site: 'https://astro-advanced-blog-template.vercel.app',
+  site: "https://astro-advanced-blog-template.netlify.app",
   integrations: [
     mdx(),
     compress({
       html: {
-        removeComments: true
-      }
+        removeComments: true,
+      },
+      js: false,
     }),
     sitemap(),
   ],
   markdown: {
     shikiConfig: {
-      theme: 'nord'
+      theme: "nord",
     },
     rehypePlugins: [['rehype-external-links', {
       target: '_blank'

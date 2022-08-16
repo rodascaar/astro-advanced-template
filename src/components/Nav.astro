@@ -1,18 +1,26 @@
 ---
-import { DarkMode } from 'accessible-astro-components'
-const { current = '' } = Astro.props
+import { DarkMode } from "accessible-astro-components";
+const { current = "" } = Astro.props;
 ---
 
 <nav>
-  <a class={current === "" ? "selected" : ""} href='/'>home</a>
-  <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
-  <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
-  <div class="theme-toggle-container">
-    <DarkMode />
-  </div>
+  <ul>
+    <li>
+      <a class={current === "" ? "selected" : ""} href="/">home</a>
+    </li>
+    <li>
+      <a class={current === "about" ? "selected" : ""} href="/about">about</a>
+    </li>
+    <li>
+      <a class={current === "blog" ? "selected" : ""} href="/blog">blog</a>
+    </li>
+    <li>
+      <DarkMode />
+    </li>
+  </ul>
 </nav>
 
-<style>
+<style lang="scss">
   nav {
     align-items: center;
     display: flex;
@@ -21,6 +29,18 @@ const { current = '' } = Astro.props
     font-weight: 700;
     justify-content: flex-end;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  nav ul,
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-flex;
+    width: 90px;
   }
 
   a {
@@ -29,7 +49,7 @@ const { current = '' } = Astro.props
     padding: 10px 5px;
     display: block;
     position: relative;
-    margin-left: 20px;
+    // margin-left: 20px;
     min-width: 70px;
     text-align: center;
   }
@@ -39,9 +59,9 @@ const { current = '' } = Astro.props
   }
 
   a::before {
-    content: '';
+    content: "";
     position: absolute;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -58,33 +78,40 @@ const { current = '' } = Astro.props
   .selected::before {
     background: var(--primary-color);
   }
+</style>
+
+<style is:global lang="scss">
+  @use "../assets/scss/base/outline" as *;
 
   .darkmode-toggle {
-    padding: 0;
+    background-color: transparent;
     border: none;
+    cursor: pointer;
+
     svg {
-      width: 30px;
+      width: 45px;
     }
+
     svg path {
-      fill: var(--secondary-500);
+      fill: var(--text-secondary);
       transition: fill 0.2s ease-in-out;
     }
     &:hover {
       svg path {
-        fill: var(--primary-400);
+        fill: var(--primary-color);
       }
     }
     &:focus {
-      @include outline;
+      // @include outline;
     }
   }
   .darkmode .darkmode-toggle {
     svg path {
-      fill: var(--secondary-100);
+      fill: var(--text-secondary);
     }
     &:hover {
       svg path {
-        fill: var(--primary-400);
+        fill: var(--primary-color);
       }
     }
   }

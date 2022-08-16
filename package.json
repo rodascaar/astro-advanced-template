@@ -8,16 +8,23 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "node deploy"
+    "deploy": "node deploy",
+    "prettier": "prettier -w --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@astrojs/mdx": "^0.8.3",
     "@astrojs/sitemap": "^1.0.0",
     "accessible-astro-components": "^1.5.5",
-    "astro": "^1.0.5",
+    "astro": "^1.0.6",
     "astro-compress": "^0.0.18",
+    "autoprefixer": "^10.4.8",
     "ftp-deploy": "^2.4.3",
+    "postcss": "^8.4.16",
+    "postcss-preset-env": "^7.8.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.0",
     "rehype-external-links": "^2.0.0",
+    "rollup": "^2.78.0",
     "sass": "^1.54.4"
   },
   "dependencies": {
