@@ -29,12 +29,12 @@ pnpm create astro -- --template redwerkz/astro-advanced-blog-template
 
 ## ✨ Features
 
-- [x] ✅ Astro 1.0
-- [x] ✅ Dark Mode
-- [x] ✅ Full Markdown support
-- [x] ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- [ ] ✅ RSS 2.0 generation
-- [ ] ✅ Sitemap.xml generation
+- [x] 🚀 Astro 1.0
+- [x] 🌑 Dark Mode
+- [x] 📝 Full Markdown support
+- [x] 📈 SEO-friendly setup with canonical URLs and OpenGraph data
+- [ ] 🌐 RSS 2.0 generation
+- [x] 🗺 Sitemap.xml generation via [@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
 - [x] 🗜️ Source compression via [astro-compress](https://github.com/Playform/astro-compress#readme)
 - [x] ⬆️ Deploy to Netlify, Vercel or FTP via [ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme)
 

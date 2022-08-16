@@ -16,6 +16,7 @@ export default defineConfig({
         removeComments: true
       }
     }),
+    sitemap(),
   ],
   markdown: {
     shikiConfig: {
