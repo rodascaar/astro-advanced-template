@@ -2,10 +2,10 @@ const FtpDeploy = require("ftp-deploy");
 const ftpDeploy = new FtpDeploy();
 
 const config = {
-  user: "nexus_ftp",
+  user: "USER",
   // Password optional, prompted if none given
-  password: "fA3rOjbf9@zMN!Dp",
-  host: "ftp.eclecticboom.space",
+  password: "H4CKM3",
+  host: "ftp.example.com",
   port: 21,
   localRoot: __dirname + "/dist/",
   remoteRoot: "/public_html",
