@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "About";
+const description = "About your blog.";
+const permalink = `${Astro.site.href}about`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="about"
+>
+  <div class="container">
+    <h1>About</h1>
+    <figure class="about-image">
+      <img
+        src="/assets/img/undraw_lost_online_re_upmy.svg"
+        alt="Illustration of a notebook"
+        width="330"
+      />
+      <figcaption>
+        Illustration by
+        <a
+          href="//icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6"
+          target="_blank"
+          rel="noopener"
+          >Icons 8
+        </a>
+        from
+        <a href="//icons8.com/illustrations" target="_blank" rel="noopener"
+          >Ouch!
+        </a>
+      </figcaption>
+    </figure>
+    <p>
+      The urge to miniaturize electronics did not exist before the space program.
+      I mean our grandparents had radios that was furniture in the living room.
+      Nobody at the time was saying, 'Gee, I want to carry that in my pocket.'
+      Which is a non-thought.
+    </p>
+    <p>
+      Where there's water on Earth, you find life as we know it.
+      So if you find water somewhere else, it becomes a remarkable draw to look closer to see if life of any kind is there, even if it's bacterial, which would be extraordinary for the field of biology.
+    </p>
+    <p>
+      Let me tell you something about full moons: kids don't care about full moons.
+      They'll play in a full moon, no worries at all. 
+      They only get scared of magic or werewolves from stupid adults and their stupid adult stories.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-image {
+    float: right;
+    margin: -3em -7em 2em 2em;
+    max-width: 300px;
+  }
+
+  .about-image img {
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 1020px) {
+    .about-image {
+      float: none;
+      margin: 0 auto 2em;
+    }
+  }
+</style>

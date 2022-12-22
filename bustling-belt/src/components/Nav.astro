@@ -1,0 +1,118 @@
+---
+import { DarkMode } from "accessible-astro-components";
+const { current = "" } = Astro.props;
+---
+
+<nav>
+  <ul>
+    <li>
+      <a class={current === "" ? "selected" : ""} href="/">home</a>
+    </li>
+    <li>
+      <a class={current === "about" ? "selected" : ""} href="/about">about</a>
+    </li>
+    <li>
+      <a class={current === "blog" ? "selected" : ""} href="/blog">blog</a>
+    </li>
+    <li>
+      <DarkMode />
+    </li>
+  </ul>
+</nav>
+
+<style lang="scss">
+  nav {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font-family: var(--font-family-sans);
+    font-weight: 700;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  nav ul,
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline-flex;
+    width: 90px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: block;
+    position: relative;
+    // margin-left: 20px;
+    min-width: 70px;
+    text-align: center;
+  }
+
+  a:not(.selected) {
+    opacity: 0.7;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    transition: transform 0.3s ease;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--text-secondary);
+    transform: scaleX(0);
+  }
+
+  a:hover::before,
+  .selected::before {
+    transform: scaleX(1);
+  }
+
+  .selected::before {
+    background: var(--primary-color);
+  }
+</style>
+
+<style is:global lang="scss">
+  @use "../assets/scss/base/outline" as *;
+
+  .darkmode-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      width: 45px;
+    }
+
+    svg path {
+      fill: var(--text-secondary);
+      transition: fill 0.2s ease-in-out;
+    }
+    &:hover {
+      svg path {
+        fill: var(--primary-color);
+      }
+    }
+    &:focus {
+      // @include outline;
+    }
+  }
+  .darkmode .darkmode-toggle {
+    svg path {
+      fill: var(--text-secondary);
+    }
+    &:hover {
+      svg path {
+        fill: var(--primary-color);
+      }
+    }
+  }
+</style>
